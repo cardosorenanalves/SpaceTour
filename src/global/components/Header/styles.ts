@@ -1,10 +1,8 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import IconSvg from '../../assets/svg/Group2.svg'
 
-interface BProps{
-    active: boolean;
-}
 
 export const Container = styled.div`
 position: relative;
@@ -54,28 +52,8 @@ background: rgba(255, 255, 255, 0.04);
 backdrop-filter: blur(95.5485px);
 `;
 
-export const NavigationButton = styled.div<BProps>`
+export const NavigationButton = styled(Link)`
 cursor: pointer;
 color: ${({theme}) => theme.colors.shape};
-
-&:hover{
-        color: ${({theme}) => theme.colors.text};
-       }
-
-&.active{
-    color: ${({theme}) => theme.colors.shape};
-    font-weight: bold;
-            }
-
-            &.active::after{
-                content: '';
-                height: 3px;
-                border-radius: 3px 3px 0 0;
-                width: 100%;
-                position: absolute;
-                bottom: 1px;
-                left: 0;
-                background: var(--yellow-500);
-
-            }
+text-decoration: none;
 `;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { 
     Container,
     Content,
@@ -10,22 +10,32 @@ import {
 
 
 export function Header(){
+
 return(
 <Container>
     <Content>
         <Icon/>
         <LineDiv/>
         <NavigationDiv>
-            <NavigationButton active={true}>
+            <NavigationButton 
+            to='/'
+   >
                 00 HOME
             </NavigationButton>
-            <NavigationButton active={false}>
+            <NavigationButton 
+          to='/destination'
+            
+            >
                 01 DESTINATION
             </NavigationButton>
-            <NavigationButton active={false}>
+            <NavigationButton 
+            to='/'
+            >
                 02 CREW
             </NavigationButton>
-            <NavigationButton active={false}>
+            <NavigationButton
+            to='/'
+            >
                 03 TECHNOLOGY
             </NavigationButton>
         </NavigationDiv>

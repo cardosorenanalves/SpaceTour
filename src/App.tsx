@@ -3,14 +3,20 @@ import { ThemeProvider } from 'styled-components';
 import theme from './global/styles/theme';
 import { Home } from './pages/home';
 import {GlobalStyles} from './global/styles/globalStyles'
+import {BrowserRouter} from 'react-router-dom' 
+import { AppRoutes } from './global/routes';
 
 
 function App() {
   return (
-  <ThemeProvider theme={theme}>
-   <Home/>
-   <GlobalStyles/>
-   </ThemeProvider>
+    
+    <BrowserRouter>
+        <ThemeProvider theme={theme}>
+          <GlobalStyles/>
+          <AppRoutes/>
+      </ThemeProvider>
+    </BrowserRouter>
+  
   );
 }
 

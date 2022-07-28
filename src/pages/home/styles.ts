@@ -6,7 +6,9 @@ export const Container = styled.div`
   display: block;
   width: 100%;
   height: 100vh;
-  background-image: url(${BackgroundImg});
+  background: url(${BackgroundImg}) ;
+  background-size: cover;
+
   
   
 `;
@@ -19,6 +21,15 @@ justify-content: space-between;
 align-items: center;
 padding-top: 6%;
 
+@media (min-width: 1400px ){
+  padding-top: 14%;
+  margin: 0 3%;
+}
+
+@media (max-width: 1200px){
+  flex-direction: column;
+  
+}
 `;
 
 export const TextDiv = styled.div`
@@ -33,12 +44,21 @@ export const H2 = styled.text`
 font-size: 18px;
 color: ${({theme}) => theme.colors.shape};
 font-family: 'Barlow Condensed', sans-serif;
+@media (max-width: 1200px){
+  font-size: 16px;
+  
+}
 `;
 
 export const H1 = styled.text`
 font-size: 150px;
 color: ${({theme}) => theme.colors.shape};
 font-family: 'Bellefair', serif;
+
+@media (max-width: 1200px){
+  font-size: 100px;
+  
+}
 `;
 
 export const H4 = styled.text`
@@ -46,6 +66,10 @@ font-size: 18px;
 color: ${({theme}) => theme.colors.shape};
 font-family: 'Barlow', sans-serif;
 
+@media (max-width: 1200px){
+  font-size: 16px;
+  
+}
 `;
 
 export const Button = styled.div`
@@ -58,6 +82,12 @@ display: flex;
 justify-content: center;
 align-items: center;
 margin: 0px 165px;
+
+@media (max-width: 1200px){
+  height: 170px;
+  width: 170px;
+  
+}
 `;
 
 export const ButtonText = styled.text`
