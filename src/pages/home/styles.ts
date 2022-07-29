@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
  
 import BackgroundImg from '../../global/assets/home/background-home-desktop.jpg'
@@ -72,7 +73,7 @@ font-family: 'Barlow', sans-serif;
 }
 `;
 
-export const Button = styled.div`
+export const Button = styled(Link)`
 cursor: pointer;
 background-color: ${({theme}) => theme.colors.shape};
 height: 215px;
@@ -82,6 +83,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 margin: 0px 165px;
+text-decoration: none;
 
 @media (max-width: 1200px){
   height: 170px;
@@ -91,6 +93,7 @@ margin: 0px 165px;
 `;
 
 export const ButtonText = styled.text`
+color: ${({theme}) => theme.colors.text_dark};
 font-size: 50px;
 font-family: 'Bellefair', serif;
 `;

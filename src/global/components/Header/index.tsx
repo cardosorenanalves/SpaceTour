@@ -29,7 +29,7 @@ return(
                 01 DESTINATION
             </NavigationButton>
             <NavigationButton 
-            to='/'
+            to='/crew'
             >
                 02 CREW
             </NavigationButton>

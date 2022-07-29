@@ -13,6 +13,7 @@ import {
 } from "./styles";
 
 export function Home(){
+    
     return(
         <Container>
             <Header/>
@@ -27,7 +28,8 @@ export function Home(){
                     </H4>
                 </TextDiv>
                 
-                <Button>
+                <Button
+                to={'/destination'}>
                     <ButtonText>
                            Explore 
                     </ButtonText>

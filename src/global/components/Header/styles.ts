@@ -8,7 +8,7 @@ export const Container = styled.div`
 position: relative;
 
 width: 100%;
-margin-bottom: 90px;
+
 padding-top: 2%;
 `;
 
