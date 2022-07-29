@@ -34,7 +34,7 @@ return(
                 02 CREW
             </NavigationButton>
             <NavigationButton
-            to='/'
+            to='/technology'
             >
                 03 TECHNOLOGY
             </NavigationButton>
