@@ -82,4 +82,10 @@ export const Container = styled.div`
  width: 450px;
  height: 520px;
  margin-right: 10%;
+
+ @media(min-height: 750px){
+  width: 710px;
+  height: 780px
+ }
  `;
+ 
