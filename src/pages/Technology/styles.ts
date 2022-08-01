@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 import BackgroundImg from '../../global/assets/technology/background-technology-desktop.jpg'
 
+interface IButton{
+  onActive: boolean;
+}
+
+
 export const Container = styled.div`
   display: block;
   width: 100%;
@@ -19,9 +24,10 @@ margin-top: 5%;
 export const Buttons = styled.div`
 margin-left: 12%;
 margin-top: 6%;
+
 `;
 
-export const Button = styled.div`
+export const Button = styled.div<IButton>`
 cursor: pointer;
 display: flex;
 width: 75px;
@@ -32,11 +38,13 @@ border-color: ${({theme}) => theme.colors.shape};
 margin-bottom: 35%;
 justify-content: center;
 align-items: center;
-
+background-color: ${({theme, onActive}) =>
+onActive === true ? theme.colors.shape : 'none'};
 `;
 
-export const TextButton = styled.text`
-color: ${({theme}) => theme.colors.shape};
+export const TextButton = styled.text<IButton>`
+color: ${({theme, onActive}) =>
+onActive === true ? theme.colors.text_dark : theme.colors.shape};
  font-size: 32px;
  font-family: 'Bellefair', serif;
 `;
@@ -44,9 +52,9 @@ color: ${({theme}) => theme.colors.shape};
 export const InfoDiv = styled.div`
 display: flex;
 flex-direction: column;
-width: 470px;
 height: 303px;
-
+margin-top: 5%;
+margin-left: 10%;
 `;
 
 export const Title = styled.text`
@@ -54,7 +62,7 @@ color: ${({theme}) => theme.colors.shape};
  margin-bottom: 3%;
  font-family: 'Barlow Condensed', sans-serif;
  font-size: 28px;
- margin-bottom: 5%;
+ 
  letter-spacing: 4.725px;
 `;
 
@@ -62,6 +70,7 @@ export const InfoTitle = styled.div`
 color: ${({theme}) => theme.colors.shape};
 font-family: 'Barlow Condensed', sans-serif;
 font-size: 16px;
+padding-top: 5%;
 `;
 
 export const VehicleName = styled.div`
@@ -81,4 +90,20 @@ color: ${({theme}) => theme.colors.shape};
 export const VehicleImage = styled.img`
 width: 450px;
 height: 440px;
+`;
+
+export const TitleDiv = styled.div`
+margin-left: 15%;
+`;
+
+export const TitleAndInfo = styled.div`
+display: flex;
+flex-direction: column;
+padding-left: 5%;
+`;
+
+export const TextDiv = styled.div`
+display: flex;
+flex-direction: row;
+
 `;
