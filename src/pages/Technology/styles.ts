@@ -40,6 +40,10 @@ justify-content: center;
 align-items: center;
 background-color: ${({theme, onActive}) =>
 onActive === true ? theme.colors.shape : 'none'};
+transition: 0.2s;
+:hover{
+    background-color: ${({theme, onActive}) => onActive ? theme.colors.shape : theme.colors.shape_dark};   
+ }
 `;
 
 export const TextButton = styled.text<IButton>`

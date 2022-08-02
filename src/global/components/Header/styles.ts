@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { Button } from "../../../pages/home/styles";
 
 import IconSvg from '../../assets/svg/Group2.svg'
-
+interface IButton{
+    isActive: boolean;
+}
 
 export const Container = styled.div`
 position: relative;
@@ -56,4 +59,16 @@ export const NavigationButton = styled(Link)`
 cursor: pointer;
 color: ${({theme}) => theme.colors.shape};
 text-decoration: none;
+:hover{
+    color: ${({theme}) => theme.colors.text};
+}
+
+
+`;
+
+export const ButtonDiv = styled.div<IButton>`
+display: flex;
+height: 100%;
+align-items: center;
+border-bottom: ${({isActive}) => isActive ? '2px solid white' : 'none' };
 `;

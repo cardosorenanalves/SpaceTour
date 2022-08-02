@@ -126,15 +126,19 @@ export function Destination(){
  <InfoDiv>
      <Planets>
          <ButtonPlanet
+         onActive={id === 0}
          onClick={() => handleSelectPlanet(0)}
          >MOON</ButtonPlanet>
          <ButtonPlanet
+         onActive={id === 1}
          onClick={() => handleSelectPlanet(1)}
          >MARS</ButtonPlanet>
          <ButtonPlanet
+         onActive={id === 2}
          onClick={() => handleSelectPlanet(2)}
          >EUROPA</ButtonPlanet>
          <ButtonPlanet
+         onActive={id === 3}
          onClick={() => handleSelectPlanet(3)}>TITAN</ButtonPlanet>
      </Planets>
      <PlanetName>{item.destinations[id].name}</PlanetName>

@@ -119,15 +119,19 @@ export function Crew(){
                                </Bio>
                         <Buttons>
                             <Button
+                            onActive={id === 0}
                             onClick={() => handleSelectPerson(0)}
                             />
                             <Button
+                            onActive={id === 1}
                             onClick={() => handleSelectPerson(1)}
                             />
                             <Button
+                            onActive={id === 2}
                             onClick={() => handleSelectPerson(2)}
                             />
                             <Button
+                            onActive={id === 3}
                             onClick={() => handleSelectPerson(3)}
                             />
                         </Buttons>

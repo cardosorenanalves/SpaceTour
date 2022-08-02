@@ -90,6 +90,10 @@ text-decoration: none;
   width: 170px;
   
 }
+transition: 0.2s;
+:hover{
+  filter: brightness(0.9)
+}
 `;
 
 export const ButtonText = styled.text`

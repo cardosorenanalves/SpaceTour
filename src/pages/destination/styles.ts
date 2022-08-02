@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 import BackgroundImg from '../../global/assets/destination/background-destination-desktop.jpg'
 
+interface IButton{
+  onActive: boolean;
+}
 
 export const Container = styled.div`
 display: block;
@@ -48,12 +51,16 @@ export const Planets = styled.div`
 display: flex;
 flex-direction: row;
 `;
-export const ButtonPlanet = styled.text`
+export const ButtonPlanet = styled.text<IButton>`
 cursor: pointer;
 margin-right: 5%;
 color: ${({theme}) => theme.colors.shape};
 font-family: 'Barlow Condensed', sans-serif;
-
+border-bottom: ${({onActive}) => onActive ? '1.8px solid white' : 'none' };
+transition: 0.2s;
+:hover{
+    color: ${({theme}) => theme.colors.text};
+}
 `;
 
 export const PlanetName = styled.text`

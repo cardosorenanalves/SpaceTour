@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 import BackgroundImg from '../../global/assets/crew/background-crew-desktop.jpg'
 
+interface IButton{
+  onActive: boolean;
+}
+
+
 export const Container = styled.div`
   display: block;
   width: 100%;
@@ -63,11 +68,12 @@ export const Container = styled.div`
  margin-top: 8%;
  `;
 
- export const Button = styled.div`
+ export const Button = styled.div<IButton>`
  cursor: pointer;
  height: 15px;
  width: 15px;
- background-color: ${({theme}) => theme.colors.text};
+ background-color: ${({theme, onActive}) => onActive? 
+ theme.colors.shape : theme.colors.text};
  border-radius: 50%;
  margin-right: 3%;
 
