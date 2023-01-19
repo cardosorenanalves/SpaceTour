@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.js": "/static/js/main.e8e376d0.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/image-victor-glover.png": "/static/media/image-victor-glover.8a9a5424588b73ec61c2.png",
+    "static/media/image-anousheh-ansari.png": "/static/media/image-anousheh-ansari.2d647128496ddc638acd.png",
+    "static/media/image-mark-shuttleworth.png": "/static/media/image-mark-shuttleworth.fc30f35b05fc0bc4ee47.png",
+    "static/media/image-douglas-hurley.png": "/static/media/image-douglas-hurley.7540fbb61923064f065e.png",
+    "static/media/background-home-desktop.jpg": "/static/media/background-home-desktop.cdf3864ecbfdf20e8c3b.jpg",
+    "static/media/image-moon.png": "/static/media/image-moon.d287d07182de3015952f.png",
+    "static/media/background-destination-desktop.jpg": "/static/media/background-destination-desktop.468b922c69bf5499b4bc.jpg",
+    "static/media/image-europa.png": "/static/media/image-europa.3e95f7d0a16fe2ebf4c6.png",
+    "static/media/image-mars.png": "/static/media/image-mars.1b224c8663251270d79f.png",
+    "static/media/image-spaceport-portrait.jpg": "/static/media/image-spaceport-portrait.85523db5de13057f36ea.jpg",
+    "static/media/background-crew-desktop.jpg": "/static/media/background-crew-desktop.88a3c692fd34eb311e04.jpg",
+    "static/media/image-titan.png": "/static/media/image-titan.d4b078f9ce17e686ae99.png",
+    "static/media/background-technology-desktop.jpg": "/static/media/background-technology-desktop.b7b589b3c0c5ef0811d4.jpg",
+    "static/media/image-space-capsule-portrait.jpg": "/static/media/image-space-capsule-portrait.dd0ac138afef98c1666a.jpg",
+    "static/media/image-launch-vehicle-portrait.jpg": "/static/media/image-launch-vehicle-portrait.0c758955a178bdcc3230.jpg",
+    "index.html": "/index.html",
+    "static/media/Group2.svg": "/static/media/Group2.df9d0da489d48eb48d7eaf0a2af1a6af.svg",
+    "main.e8e376d0.js.map": "/static/js/main.e8e376d0.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.e8e376d0.js"
+  ]
+}
